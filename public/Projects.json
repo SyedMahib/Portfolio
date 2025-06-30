@@ -1,0 +1,68 @@
+[
+  {
+    "id": "cribconnect",
+    "title": "CribConnect - Roommate Finder",
+    "image": [
+      "https://i.ibb.co/Fb37D06k/Cribconnect1.png",
+      "https://i.ibb.co/RkhB4R64/cribconnect-2.png",
+      "https://i.ibb.co/7dFMxrnq/cribconnect-3.png"
+    ],
+    "description": "A modern roommate and housing finder web app built with React and Tailwind CSS.",
+    "mainDescription": "CribConnect helps users seamlessly discover and connect with potential roommates or shared living spaces. Built with a focus on clean UI and robust backend integration using Firebase and MongoDB.",
+    "techStack": ["React", "TailwindCSS", "Firebase", "DaisyUI", "Express", "MongoDB", "React-Router", "Node.js"],
+    "features": [
+      "🔍 Room & Roommate Listings – Search and explore available rooms and roommates.",
+      "📝 Registration & Login – Secure user authentication using Firebase",
+      "🎯 Interactive UI – Smooth animations, tooltips, and alerts.",
+      "📱 Responsive design with DaisyUI and Tailwind",
+      "🎛️ Custom dashboard for listing management"
+    ],
+    "liveLink": "https://crib-connect.netlify.app/",
+    "githubLink": "https://github.com/SyedMahib/Crib-Connect",
+    "detailsLink": "/projects/cribconnect"
+  },
+  {
+    "id": "heritagevault",
+    "title": "Heritage Vault - A Digital Museum",
+    "image": [
+      "https://i.ibb.co/hRQyMK1q/Heri1.png",
+      "https://i.ibb.co/97PS7Fn/heri-2.png",
+      "https://i.ibb.co/B5sd4CPJ/heri-3.png"
+    ],
+    "description": "A digital gateway to explore and preserve humanity’s cultural heritage online.",
+    "mainDescription": "Welcome to Heritage Vault, your digital gateway to exploring and appreciating humanity's rich historical and cultural heritage. This platform is dedicated to preserving, documenting, and making rare artifacts accessible to researchers, educators, and curious minds worldwide. By combining cutting-edge web technologies with a passion for history, we ensure that every artifact tells its unique story – protected, understood, and passed on to future generations.",
+    "techStack": ["React", "TailwindCSS", "Firebase", "DaisyUI", "Express", "MongoDB", "Framer Motion", "React-Router", "JWT", "Node.js"],
+    "features": [
+      "🛢 Artifact management with MongoDB",
+      "📲 Responsive digital exhibition layout",
+      "👨🏻‍💼 User roles for curators, researchers, and guests",
+      "🔎 Advanced filtering and search functionality",
+      "🛡️Secure backend with Node.js and Express"
+    ],
+    "liveLink": "https://heritage-vault-8691f.web.app/",
+    "githubLink": "https://github.com/SyedMahib/Heritage-Vault",
+    "detailsLink": "/projects/heritagevault"
+  },
+  {
+    "id": "lawbd",
+    "title": "Law.BD - Find Your Best Lawyer",
+    "image": [
+      "https://i.ibb.co/xSH0KN1d/Law-1.png",
+      "https://i.ibb.co/zTHyK6St/Law-2.png",
+      "https://i.ibb.co/pvN3Lrb2/Law-3.png"
+    ],
+    "description": "A platform to connect users with legal professionals across Bangladesh.",
+    "mainDescription": "Law.BD enables users to find lawyers based on expertise, location, and availability. It simplifies legal consultation by offering profile-based discovery and booking features.",
+    "techStack": ["DaisyUI", "React", "TailwindCSS"],
+    "features": [
+      "Lawyer profile and expertise listing",
+      "Search by practice area and location",
+      "Simple UI for fast legal help access",
+      "DaisyUI components for a clean UX",
+      "Mobile responsive design"
+    ],
+    "liveLink": "#",
+    "githubLink": "#",
+    "detailsLink": "/projects/lawbd"
+  }
+]
