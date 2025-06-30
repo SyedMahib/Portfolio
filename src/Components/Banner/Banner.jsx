@@ -5,7 +5,7 @@ import { BiLogoFirebase, BiLogoTailwindCss } from "react-icons/bi";
 import { Link } from "react-router";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { RiTwitterXFill } from "react-icons/ri";
-import pfp from "../../assets/pfp.jpg";
+import pfp from "../../assets/pfp.PNG";
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // AOS styles
