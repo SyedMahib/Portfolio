@@ -40,13 +40,14 @@ const Projects = () => {
   const projectData = use(projectDataPromise);
 
   return (
-    <section className=" md:container mx-auto mt-25 bg-gradient-to-br from-gray-950 via-blue-900/10 to-gray-950 text-white py-16 px-6 md:px-20 md:rounded-3xl">
-      <h2 className="text-3xl font-bold mb-8 text-center">
+    <section data-aos="fade-down" className=" md:container mx-auto mt-25 bg-gradient-to-br from-gray-950 via-blue-900/10 to-gray-950 text-white py-16 px-6 md:px-20 md:rounded-3xl">
+      <h2 data-aos="fade-up" className="text-3xl font-bold mb-8 text-center">
         <span className="text-blue-500">//</span> Projects
       </h2>
       <div className="space-y-12">
         {projectData.map((project, index) => (
           <div
+          data-aos="fade-up"
             key={index}
             className="flex flex-col md:flex-row items-center gap-8 bg-white/5 p-5 md:p-10 rounded-xl border border-white/10 shadow-md"
           >

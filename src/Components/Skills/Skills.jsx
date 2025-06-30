@@ -40,7 +40,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="my-25 bg-gradient-to-br from-gray-950 via-blue-900/10 to-gray-950 text-white py-[50px] px-6 md:px-20">
+    <section data-aos="zoom-out-down" className="my-25 bg-gradient-to-br from-gray-950 via-blue-900/10 to-gray-950 text-white py-[50px] px-6 md:px-20">
       <h2 className="text-3xl font-bold mb-8 text-center">
         <span className="text-blue-500">//</span> My Skills
       </h2>
@@ -57,6 +57,7 @@ const Skills = () => {
         ))}
       </Marquee>
       <Marquee
+      
         gradient={false}
         speed={50}
         autoFill={true}

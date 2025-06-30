@@ -6,12 +6,26 @@ import { Link } from "react-router";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { RiTwitterXFill } from "react-icons/ri";
 import pfp from "../../assets/pfp.jpg";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // AOS styles
 
 const Banner = () => {
+
+   useEffect(() => {
+    AOS.init({
+      duration: 800, 
+      easing: 'ease-in-out',
+      once: true, 
+      mirror: false,
+    });
+  }, []);
+
+
   return (
     <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 py-8 md:py-12 lg:py-16">
-      {/* Text content - full width on mobile, 50% on desktop */}
-      <div className="w-full lg:w-1/2 order-2 lg:order-1 mt-8 lg:mt-0">
+      
+      <div data-aos="fade-down" className="w-full lg:w-1/2 order-2 lg:order-1 mt-8 lg:mt-0">
         {/* Name and designation */}
         <div className="space-y-3 md:space-y-4 lg:space-y-5">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#F5F5F5] leading-tight">
@@ -72,7 +86,7 @@ const Banner = () => {
       </div>
 
       {/* Image content - full width on mobile, 50% on desktop */}
-      <div className="w-full lg:w-1/2 order-1 lg:order-2 flex items-center justify-center h-auto sm:h-[300px] md:h-[400px] lg:h-[500px]">
+      <div data-aos="fade-in" className="w-full lg:w-1/2 order-1 lg:order-2 flex items-center justify-center h-auto sm:h-[300px] md:h-[400px] lg:h-[500px]">
         <img 
           className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 border-4 border-white/20 rounded-full object-cover shadow-xl"
           src={pfp} 
