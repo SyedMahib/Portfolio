@@ -1,14 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router";
-import DarkThemeToggle from "../DarkModeToggoler/DarkThemeToggle";
 import logo from "../../assets/logo.png";
 import { Link as ScrollLink } from "react-scroll";
-import "./navbar.css"
+import "./navbar.css";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const navLinks = (
     <>
-     <ScrollLink
+      <ScrollLink
         to="home"
         smooth={true}
         duration={500}
@@ -32,7 +31,7 @@ const Navbar = () => {
         About
       </ScrollLink>
 
-       <ScrollLink
+      <ScrollLink
         to="projects"
         smooth={true}
         duration={500}
@@ -44,7 +43,7 @@ const Navbar = () => {
         Projects
       </ScrollLink>
 
-       <ScrollLink
+      <ScrollLink
         to="skills"
         smooth={true}
         duration={500}
@@ -56,7 +55,7 @@ const Navbar = () => {
         Skills
       </ScrollLink>
 
-       <ScrollLink
+      <ScrollLink
         to="contact"
         smooth={true}
         duration={500}
@@ -94,7 +93,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700/30 shadow-xl shadow-black/20 rounded-box z-50 mt-3 w-52 p-2"
             >
               {navLinks}
             </ul>
@@ -108,7 +107,13 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <button className="btn rounded-lg font-semibold bg-blue-500 text-white transition-all duration-300 ease-in-out hover:bg-blue-700 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">Resume</button>
+          <Link
+            to="https://drive.google.com/file/d/1aM-0S8XnQpg7OjP3ifsX7ANDJLqd903k/view?usp=sharing"
+            target="blank"
+            className="btn rounded-lg font-semibold bg-blue-500 text-white transition-all duration-300 ease-in-out hover:bg-blue-700 hover:scale-105 border-0"
+          >
+            Resume
+          </Link>
         </div>
       </div>
     </div>

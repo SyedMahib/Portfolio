@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const ContactMe = () => {
@@ -30,7 +30,7 @@ const ContactMe = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl  font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className="text-blue-400">//</span> Get In Touch
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
@@ -107,7 +107,7 @@ const ContactMe = () => {
             </form>
           </motion.div>
 
-          {/* Right side - Contact info & animation */}
+          {/* Right side - Contact info */}
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -116,48 +116,59 @@ const ContactMe = () => {
             className="space-y-8"
           >
             <div className="space-y-6">
+              {/* Email */}
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-blue-500/20 rounded-full">
                   <FaEnvelope className="text-blue-400 text-xl" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white">Email Me</h3>
-                  <a href="mailto:your.email@example.com" className="text-gray-300 hover:text-blue-400 transition">
+                  <a href="mailto:syedmahib8@gmail.com" className="text-gray-300 hover:text-blue-400 transition">
                     syedmahib8@gmail.com
                   </a>
                 </div>
               </div>
 
+              {/* Phone */}
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-blue-500/20 rounded-full">
                   <FaPhone className="text-blue-400 text-xl" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white">Call Me</h3>
-                  <a href="tel:+1234567890" className="text-gray-300 hover:text-blue-400 transition">
+                  <a href="tel:+8801310339171" className="text-gray-300 hover:text-blue-400 transition">
                     +8801310339171
                   </a>
                 </div>
               </div>
 
+              {/* LinkedIn */}
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-blue-500/20 rounded-full">
-                  <FaMapMarkerAlt className="text-blue-400 text-xl" />
+                  <FaLinkedin className="text-blue-400 text-xl" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white">Linkedin</h3>
-                  <p className="text-gray-300">Connect with me!</p>
+                  <h3 className="text-lg font-semibold text-white">LinkedIn</h3>
+                  <a href="https://www.linkedin.com/in/syed-mahib" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition">
+                    Connect with me
+                  </a>
                 </div>
               </div>
+
+              {/* WhatsApp */}
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-blue-500/20 rounded-full">
-                  <FaMapMarkerAlt className="text-blue-400 text-xl" />
+                  <FaWhatsapp className="text-blue-400 text-xl" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white">Whatsapp</h3>
-                  <p className="text-gray-300">+8801310339171</p>
+                  <h3 className="text-lg font-semibold text-white">WhatsApp</h3>
+                  <a href="https://wa.me/8801310339171" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition">
+                    +8801310339171
+                  </a>
                 </div>
               </div>
+
+              {/* Location */}
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-blue-500/20 rounded-full">
                   <FaMapMarkerAlt className="text-blue-400 text-xl" />

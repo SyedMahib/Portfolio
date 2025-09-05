@@ -6,26 +6,26 @@ import { Link } from "react-router";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { RiTwitterXFill } from "react-icons/ri";
 import pfp from "../../assets/pfp.PNG";
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // AOS styles
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // AOS styles
 
 const Banner = () => {
-
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({
-      duration: 800, 
-      easing: 'ease-in-out',
-      once: true, 
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
       mirror: false,
     });
   }, []);
 
-
   return (
     <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 py-8 md:py-12 lg:py-16">
-      
-      <div data-aos="fade-down" className="w-full lg:w-1/2 order-2 lg:order-1 mt-8 lg:mt-0">
+      <div
+        data-aos="fade-down"
+        className="w-full lg:w-1/2 order-2 lg:order-1 mt-8 lg:mt-0"
+      >
         {/* Name and designation */}
         <div className="space-y-3 md:space-y-4 lg:space-y-5">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#F5F5F5] leading-tight">
@@ -40,10 +40,12 @@ const Banner = () => {
             you'll find me exploring cutting-edge web technologies or
             contributing to open source.
           </p>
-          
+
           {/* Buttons and social links */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-6 md:mt-8">
-            <Link 
+            <Link
+              to="https://drive.google.com/file/d/1aM-0S8XnQpg7OjP3ifsX7ANDJLqd903k/view?usp=sharing"
+              target="blank"
               className="px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold bg-blue-500 text-white 
                 transition-all duration-300 ease-in-out hover:bg-blue-700 
                 hover:scale-105 hover:shadow-lg focus:outline-none 
@@ -86,11 +88,14 @@ const Banner = () => {
       </div>
 
       {/* Image content - full width on mobile, 50% on desktop */}
-      <div data-aos="fade-in" className="w-full lg:w-1/2 order-1 lg:order-2 flex items-center justify-center h-auto sm:h-[300px] md:h-[400px] lg:h-[500px]">
-        <img 
+      <div
+        data-aos="fade-in"
+        className="w-full lg:w-1/2 order-1 lg:order-2 flex items-center justify-center h-auto sm:h-[300px] md:h-[400px] lg:h-[500px]"
+      >
+        <img
           className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 border-4 border-white/20 rounded-full object-cover shadow-xl"
-          src={pfp} 
-          alt="Syed Mahib" 
+          src={pfp}
+          alt="Syed Mahib"
         />
       </div>
     </div>
